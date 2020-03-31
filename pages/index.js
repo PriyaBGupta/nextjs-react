@@ -25,4 +25,8 @@ class IndexPage extends Component {
         )
     }
 }
+
+// Deploying Next.js
+// we need deploy whole folder on server and
+// then run npmv install and npm run start which  will run optimised build 
 export default IndexPage;
