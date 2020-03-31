@@ -93,10 +93,10 @@ module.exports =
 /************************************************************************/
 /******/ ({
 
-/***/ "./pages/auth/index.js":
-/*!*****************************!*\
-  !*** ./pages/auth/index.js ***!
-  \*****************************/
+/***/ "./components/User.js":
+/*!****************************!*\
+  !*** ./components/User.js ***!
+  \****************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -104,11 +104,11 @@ module.exports =
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "D:\\ChaloKareReact\\React-Basic\\nextjs-react\\pages\\auth\\index.js";
+var _jsxFileName = "D:\\ChaloKareReact\\React-Basic\\nextjs-react\\components\\User.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
-const authIndexPage = () => __jsx("div", {
+const User = props => __jsx("div", {
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
@@ -122,7 +122,60 @@ const authIndexPage = () => __jsx("div", {
     lineNumber: 4,
     columnNumber: 9
   }
-}, "The Auth Index Page"));
+}, props.name), __jsx("p", {
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 5,
+    columnNumber: 9
+  }
+}, "Age: ", props.age));
+
+/* harmony default export */ __webpack_exports__["default"] = (User);
+
+/***/ }),
+
+/***/ "./pages/auth/index.js":
+/*!*****************************!*\
+  !*** ./pages/auth/index.js ***!
+  \*****************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _components_User__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/User */ "./components/User.js");
+var _jsxFileName = "D:\\ChaloKareReact\\React-Basic\\nextjs-react\\pages\\auth\\index.js";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+
+const authIndexPage = () => __jsx("div", {
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 5,
+    columnNumber: 5
+  }
+}, __jsx("h1", {
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 6,
+    columnNumber: 9
+  }
+}, "The Auth Index Page"), __jsx(_components_User__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  name: "Max",
+  age: 28,
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 7,
+    columnNumber: 9
+  }
+}));
 
 /* harmony default export */ __webpack_exports__["default"] = (authIndexPage);
 
