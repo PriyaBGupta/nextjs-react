@@ -1339,7 +1339,7 @@ var errorPage = function errorPage() {
       lineNumber: 7,
       columnNumber: 31
     }
-  }, "going back"), ".")));
+  }, "going back")), "."));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (errorPage);
